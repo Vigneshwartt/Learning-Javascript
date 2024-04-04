@@ -275,6 +275,9 @@ finally{
 
 */
 
+
+
+/*
 let ca=new Promise((resolve,reject)=>{
   let booking=true
   if(booking)
@@ -291,17 +294,79 @@ ca
 .catch(()=>console.log("dont wooyy budyyd"))
 
 
+//New Promises
+function mm(){
+  return new Promise((resolve,reject)=>{
+    let coss=Math.floor(Math.random()*2)
+    if(coss==0)
+    setTimeout("ramya is late",1000)
+    resolve()
+    else
+    reject()
+  })
+}
+
+  mm()
+  .then((message)=> console.log(message))
+  .catch(()=>console.log("Its a Tails"))
+  
+*/
+////
+
+/*
+//Error Handling
+try{
+ let value=prompt("enter no")
+  if(isNaN(value))
+   throw "enter the numbers"
+  if(value==='')
+    throw " empty go and type it"
+  console.log(value*33)
+
+}
+catch(error){
+    console.log(error)
+}
+  */
+//async koduth athu promise functions
+/*
+ async function fn(){
+  return 'hello'
+}
+console.log(fn())
 
 
+async function status(){
+            console.log('hi..')
+            res=await 
+}
+*/
+/*
+//JSON
+let json1="vikki"
+let json2=23
+let json3=true
+let json4=[3,4,21,1]
+let json5=[{
+  "stock":"ideas",
+   "price":3500
+},
+{
+  "name":"viki",
+  "age":32
+},
+{
+  "god":"Muruagan",
+  "boolean":"true"
+}
+]
+let parsed = JSON.parse(json5)
+console.log(parsed[1])
 
-
-
-
-
-
-
-
-
+*/
+ console.log(fetch('https://official-joke-api.appspot.com/jokes/programming/random'))
+ .then((res)=>res.json())
+ .then((msg)=>console.log(msg[0].setup,)
 
 
 
